@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>My Todo List</h1>
+
+      <div class="form-container-1">
+        <form action="" id="create-form">
+          <div class="form-input">
+            <label for="title-input">Title</label>
+            <input
+              type="text"
+              id="title-input"
+              name="title"
+              placeholder="enter todo title"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <label for="date-input">Date</label>
+            <input type="date" id="date-input" name="date" required />
+          </div>
+          <div class="submit-holder">
+            <button type="submit">Create</button>
+            <p class="error-create"></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>S/N</th>
+              <th>Created on</th>
+              <th>Title</th>
+              <th>Todo date</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>05-06-2022</td>
+              <td>Clearance on Tuesday</td>
+              <td>07-06-2022</td>
+              <td><button id="edit">Edit</button></td>
+              <td><button id="delete">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="form-container-2">
+        <form action="" id="edit-form">
+          <div class="form-input">
+            <label for="title-edit">New title</label>
+            <input
+              type="text"
+              id="title-edit"
+              name="title"
+              placeholder="change todo title"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <label for="date-edit">New date</label>
+            <input type="date" id="date-edit" name="date" required />
+          </div>
+          <div class="submit-holder">
+            <button type="submit">Update</button>
+            <p class="error-update"></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- <input type="date" value="2021-04-03" /> -->
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
